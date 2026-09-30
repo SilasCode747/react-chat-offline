@@ -69,7 +69,7 @@ As tarefas abaixo estão em ordem progressiva; cada etapa fornece a base para a 
 1. **Definir o tipo de mensagem**
    - Criar `src/types/message.ts` com o tipo da mensagem, incluindo identificador, autor (`user` ou `bot`) e conteúdo textual.
    - Manter o tipo enxuto; não adicionar campos sem necessidade funcional, como timestamp.
-   - **Concluído quando:** os componentes conseguem compartilhar o mesmo contrato de mensagem, sem declarar tipos duplicados.
+   - **Concluído quando:** os componentes conseguem compartilhar o mesmo contrato de mensagem, sem declarar tipos duplicados. **Feito.**
 
 2. **Implementar a apresentação de uma mensagem**
    - Criar componente em `src/components` para exibir autor e conteúdo.
