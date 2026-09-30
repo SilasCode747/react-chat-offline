@@ -16,7 +16,7 @@ export default function MessageBubble({ message }: MessageBubbleProps) {
         }`}
       >
         <p className="mb-1 text-sm font-semibold">{authorLabel}</p>
-        <p className="whitespace-pre-wrap break-words">{message.content}</p>
+        <p className="whitespace-pre-wrap wrap-anywhere">{message.content}</p>
       </div>
     </article>
   )

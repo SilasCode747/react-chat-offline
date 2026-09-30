@@ -81,7 +81,7 @@ As tarefas abaixo estão em ordem progressiva; cada etapa fornece a base para a 
    - Emitir o texto e o autor selecionado para o componente proprietário; não manter histórico dentro do compositor.
    - Implementar crescimento automático com limite, Enter para nova linha e envio exclusivamente pelo botão.
    - Desabilitar o envio quando o texto aparado estiver vazio; sinalizar o modo Robô com borda roxa.
-   - **Concluído quando:** o compositor pode ser usado por teclado e ponteiro e respeita os estados habilitado/desabilitado e os dois modos visuais.
+   - **Concluído quando:** o compositor pode ser usado por teclado e ponteiro e respeita os estados habilitado/desabilitado e os dois modos visuais. **Feito.**
 
 4. **Montar histórico e estado da conversa**
    - No componente principal, armazenar mensagens em estado React e iniciar com lista vazia.
