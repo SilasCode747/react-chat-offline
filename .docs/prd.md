@@ -88,7 +88,7 @@ As tarefas abaixo estão em ordem progressiva; cada etapa fornece a base para a 
    - Conectar o evento do compositor à inclusão de uma mensagem com identificador estável e autor selecionado.
    - Limpar o texto após envio e preservar o modo selecionado.
    - Renderizar a lista usando o componente de mensagem; rolar para a mensagem mais recente quando apropriado.
-   - **Concluído quando:** é possível enviar mensagens dos dois autores e elas aparecem na ordem de envio sem persistência.
+   - **Concluído quando:** é possível enviar mensagens dos dois autores e elas aparecem na ordem de envio sem persistência. **Feito.**
 
 5. **Aplicar o layout e os estilos responsivos**
    - Compor a janela com fundo marrom claro, área central de largura máxima `2xl`, histórico rolável e compositor branco ancorado abaixo.
