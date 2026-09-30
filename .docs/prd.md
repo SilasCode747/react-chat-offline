@@ -74,7 +74,7 @@ As tarefas abaixo estão em ordem progressiva; cada etapa fornece a base para a 
 2. **Implementar a apresentação de uma mensagem**
    - Criar componente em `src/components` para exibir autor e conteúdo.
    - Aplicar alinhamento à direita para Usuário e à esquerda para Robô, com conteúdo multilinha legível.
-   - **Concluído quando:** ambas as variantes podem ser renderizadas a partir do tipo compartilhado.
+   - **Concluído quando:** ambas as variantes podem ser renderizadas a partir do tipo compartilhado. **Feito.**
 
 3. **Implementar o compositor**
    - Criar componente em `src/components` com campo multilinha controlado, toggle de autor e botão de envio.
