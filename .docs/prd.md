@@ -100,4 +100,4 @@ As tarefas abaixo estão em ordem progressiva; cada etapa fornece a base para a 
    - Verificar conversa vazia, alternância de autor, envio por botão, Enter como quebra de linha, validação de conteúdo em branco, limpeza do campo e visibilidade da mensagem mais recente.
    - Confirmar que atualizar a página limpa o histórico.
    - Executar `npm run build` e `npm run lint` e corrigir problemas introduzidos pela implementação.
-   - **Concluído quando:** todos os critérios de aceitação acima foram verificados.
+   - **Concluído quando:** todos os critérios de aceitação acima foram verificados. **Feito.**
