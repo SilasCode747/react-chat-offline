@@ -76,7 +76,7 @@ export default function MessageComposer({ onSend }: MessageComposerProps) {
           ref={textareaRef}
           value={content}
           onChange={(event) => setContent(event.target.value)}
-          placeholder="Digite uma mensagem"
+          placeholder="Digite uma mensagem..."
           aria-label="Mensagem"
           rows={1}
           className="min-h-12 flex-1 resize-none rounded-md border border-gray-300 px-3 py-2 text-gray-900 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200"
