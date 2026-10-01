@@ -23,14 +23,19 @@ export default function App() {
   }
 
   return (
-    <main className="mx-auto flex min-h-screen max-w-2xl flex-col gap-4 p-4">
-      <section aria-label="Histórico da conversa" className="flex flex-col gap-3">
-        {messages.map((message) => (
-          <MessageBubble key={message.id} message={message} />
-        ))}
-        <div ref={lastMessageRef} aria-hidden="true" />
-      </section>
-      <MessageComposer onSend={handleSend} />
-    </main>
+    <div className="h-dvh overflow-hidden bg-[#e9e0d6]">
+      <main className="mx-auto flex h-full w-full max-w-2xl flex-col gap-4 px-3 py-3 sm:px-4 sm:py-5">
+        <section
+          aria-label="Histórico da conversa"
+          className="min-h-0 flex-1 space-y-3 overflow-y-auto overscroll-contain pb-2"
+        >
+          {messages.map((message) => (
+            <MessageBubble key={message.id} message={message} />
+          ))}
+          <div ref={lastMessageRef} aria-hidden="true" />
+        </section>
+        <MessageComposer onSend={handleSend} />
+      </main>
+    </div>
   )
 }

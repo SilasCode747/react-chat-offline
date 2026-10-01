@@ -94,7 +94,7 @@ As tarefas abaixo estão em ordem progressiva; cada etapa fornece a base para a 
    - Compor a janela com fundo marrom claro, área central de largura máxima `2xl`, histórico rolável e compositor branco ancorado abaixo.
    - Reservar espaço no histórico para que a última mensagem não fique encoberta pelo compositor.
    - Adaptar margens, largura e controles para telas estreitas, preservando contraste e áreas de interação.
-   - **Concluído quando:** o layout atende às regras visuais em desktop e mobile sem overflow horizontal.
+   - **Concluído quando:** o layout atende às regras visuais em desktop e mobile sem overflow horizontal. **Feito.**
 
 6. **Validar os fluxos completos**
    - Verificar conversa vazia, alternância de autor, envio por botão, Enter como quebra de linha, validação de conteúdo em branco, limpeza do campo e visibilidade da mensagem mais recente.
