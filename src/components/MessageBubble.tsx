@@ -6,7 +6,6 @@ type MessageBubbleProps = {
 
 export default function MessageBubble({ message }: MessageBubbleProps) {
   const isUserMessage = message.author === 'user'
-  const authorLabel = isUserMessage ? 'Usuário' : 'Robô'
 
   return (
     <article className={`flex ${isUserMessage ? 'justify-end' : 'justify-start'}`}>
@@ -15,7 +14,6 @@ export default function MessageBubble({ message }: MessageBubbleProps) {
           isUserMessage ? 'bg-blue-600 text-white' : 'bg-white text-gray-900'
         }`}
       >
-        <p className="mb-1 text-sm font-semibold">{authorLabel}</p>
         <p className="whitespace-pre-wrap wrap-anywhere">{message.content}</p>
       </div>
     </article>
