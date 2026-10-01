@@ -46,29 +46,42 @@ export default function MessageComposer({ onSend }: MessageComposerProps) {
     >
       <fieldset>
         <legend className="mb-2 text-sm font-semibold text-gray-700">Enviar como</legend>
-        <div className="flex gap-2" role="radiogroup" aria-label="Autor da mensagem">
-          {(['user', 'bot'] as const).map((option) => {
-            const isSelected = author === option
-            const label = option === 'user' ? 'Usuário' : 'Robô'
-
-            return (
-              <button
-                key={option}
-                type="button"
-                role="radio"
-                aria-checked={isSelected}
-                onClick={() => setAuthor(option)}
-                className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
-                  isSelected
-                    ? 'bg-gray-900 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                {label}
-              </button>
-            )
-          })}
-        </div>
+        <button
+          type="button"
+          aria-pressed={author === 'bot'}
+          aria-label={`Enviar como ${author === 'user' ? 'Usuário' : 'Robô'}. Clique para alternar para ${author === 'user' ? 'Robô' : 'Usuário'}`}
+          title={`Enviar como ${author === 'user' ? 'Usuário' : 'Robô'}. Clique para alternar`}
+          onClick={() => setAuthor((currentAuthor) => (currentAuthor === 'user' ? 'bot' : 'user'))}
+          className="inline-flex h-10 w-10 items-center justify-center rounded-md bg-gray-900 text-white transition-colors hover:bg-gray-700"
+        >
+          {author === 'user' ? (
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              className="h-5 w-5"
+            >
+              <circle cx="12" cy="8" r="3.5" />
+              <path d="M5.5 20a6.5 6.5 0 0 1 13 0" />
+            </svg>
+          ) : (
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="h-5 w-5"
+            >
+              <rect x="4" y="7" width="16" height="13" rx="3" />
+              <path d="M12 3v4M9 13h.01M15 13h.01M9 17h6" />
+            </svg>
+          )}
+        </button>
       </fieldset>
 
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end">
